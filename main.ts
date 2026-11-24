@@ -4,7 +4,7 @@ import { join } from "node:path";
 // The one-line excuse: the deadline survived the whole task, right up to the moment
 // the agent's context was compacted and its summary kept only the vaguest part.
 const excuse =
-  "Sorry — the deadline was in my context right up until compaction summarized it as \"user mentioned something about Friday.\"";
+  "Sorry, the deadline was in my context right up until compaction summarized it as \"user mentioned something about Friday.\"";
 
 const limit = 160;
 if ([...excuse].length > limit) throw new Error(`excuse is ${[...excuse].length} characters, limit ${limit}`);
